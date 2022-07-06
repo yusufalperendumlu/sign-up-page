@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİGN UP | KAYIT OL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="signup.js"></script>
+    
+    <div>
+        <form action="" class="form" id="form1" name="form1">
+            <h2>KAYIT OL</h2>
+            <input type="email" id="mail" class="email" placeholder="E-Mail" required>
+            <input type="text" id="text1" class="text" placeholder="User Name" required>
+            <input type="password" id="password" name="pass-1" class="password" placeholder="Password" required onchange="onChange()" minlength="8" maxlength="20">
+            <input type="password" id="re-enter" name="pass-2" placeholder="Re-Enter Password" required onchange="onChange()" minlength="8" maxlength="20">
+            <label for="date"><i class="fa-solid fa-calendar-days">  </i>Date of Birth </label>
+            <input type="date" id="date" name="date" required>
+            <fieldset data-role="controlegroup" id="gender" aria-required="true">
+                <legend><i class="fa-solid fa-venus-mars"></i>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </fieldset>
+            <input type="text" id="place" placeholder="City/Country" required>
+            <input type="tel" id="tel" placeholder="Telephone Number (Example * 555 555 55 55)" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required maxlength="13">
+            <button type="submit" class="button" id="button" onclick="dath()">SİGN UP</button>
+        </form>
+    </div>
+
+    <script src="alert.js">
+    </script>
+    
+    <script src="https://kit.fontawesome.com/bfb7b37f5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
